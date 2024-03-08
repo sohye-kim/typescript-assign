@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+#grid_hz{
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+
+  min-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.side {
+  background-image: url("C:\Users\김소혜\Documents\SPARTA Cording Club\frontend_React\Assignmnt_Psn\typescript-assign\illust.png");
+  background-position: center;
+  width: 240px;
+  height: 500px;
+  margin-top: 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards {
+  margin: 5px 5px 5px 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.workingCards {
+  margin-left: 10px;
+  margin-bottom: 7vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.App-link {
-  color: #61dafb;
+.doneCards {
+  margin-left: 10px;
+  margin-bottom: 7vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Buttons{
+  float: right;
+  display: inline;
+}
+
+.title {
+  display: inline;
+  margin-bottom: 5px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 76px;  
+}
+
+.todotitle {
+  display: inline;
+  max-width: 40vw;
+}
+
+.date {
+  display: inline;
+  max-width: 40vw;
+}
+
+.addButton {
+  max-width: 76px;
+  float: right;
+}
+
+.addToDo > Form {
+  margin-left: 10px;
+  display: inline;
 }
